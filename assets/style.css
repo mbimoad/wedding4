@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --background1:#F6EFE5;
+    --background2:#C2B3B8;
+    --background3:#6e686a;
+    --background4:#b8a9b0;
+    --background5:#d3b58d;
+} @font-face {
+	font-family:'n4';
+	src: url('../plugin/font/normal/n4.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s6';
+	src: url('../plugin/font/sambung/s6.ttf') format('truetype');
+}
+@font-face {
+	font-family:'s7';
+	src: url('../plugin/font/sambung/s7.ttf') format('truetype');
+}
+ .font_s1 {
+    font-family: s7;
+    color:var(--birutua1);
+} .font_s6 {
+    font-family: s6;
+    font-size: 3rem;
+} body {
+    background: var(--background1);
+    overflow-x: hidden;
+    font-family: n4;
+} .bunga {
+    width: 300px;
+    filter: drop-shadow(3px 3px 3px var(--background3));
+} .absolute {
+    position: absolute;
+} .relative {
+    position: relative;
+} .bunga1 {
+    left: -7pc;
+    top: -5pc;
+} .bunga2 {
+    bottom: -7pc;
+    left: -5pc;
+} .myicon {
+    color:white;
+    text-align: center;
+    width: 35px;
+    height: 34px;
+    background-color: var(--background2);
+    display: none;
+    padding: 5px;
+    border-radius: 50%;
+    position: fixed;
+    left: 10px;
+    top: 50%;
+    bottom: 50%;
+    z-index: 9999999999999999999999999999999999;
+}
+
+.dashboard-profile {
+    width: 250px;   
+} .circle {
+    border-radius: 50%;
+} .frames {
+    top: -20px;
+    left: -10px;
+    width: 270px;
+} .dashboard-description {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height: 100vh;
+} .banner {
+    width: 100vw;
+    height: 200px;
+    position: relative;
+} h1.absolute {
+    z-index: 9;
+    color:white;
+} .bismillah {
+    width: 250px;
+} .bride .card {
+    background-color:transparent;   
+    border: unset;
+} .bride .paslon {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px dotted var(--background2);
+} .bride .card-link {
+    color:var(--background3);
+} .lovestory .container-fluid {
+    position: relative;
+    top: -30px;
+    background-color: var(--background2);
+    z-index: 999;
+} .lovestory .card {
+    background: var(--background4); 
+    position: relative;
+    z-index: 9999;
+    border: unset;
+} .lovestory .card::before {
+    content: ''; 
+    width: 20px;
+    height: 20px;
+    border-bottom:solid 20px var(--background3);
+	border-left:solid 15px transparent;
+    border-right:solid 15px transparent;
+    transform: rotate(-90deg) translate(-5px,-25px);
+    z-index: -1;
+    position: absolute;
+} i.fa-heart {
+    width: 27px;
+    height: 27px;
+    padding: 5px;
+    background-color: var(--background3);
+    color:white;
+    border-radius: 50%;
+} .love-story-img {
+    width: 100%;
+} .last-banner {
+    top: -80px;
+} .times {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+} .waktu {
+    font-size: 2rem;
+} .waktu .card p {
+    font-size: 0.9rem;
+} .waktu .card,
+.weddinggift .card {
+    background: url('flower1.webp'), var(--background4);
+    background-size: cover;
+    background-blend-mode: soft-light;
+    background-position: -150px -100px;
+    background-repeat: no-repeat;
+    border: 3px solid white;
+    border-radius:10px;
+    box-shadow: 3px 3px 3px var(--background3);
+} .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    list-style: none;
+    color:var(--color3);
+} .menu a {
+    text-decoration: none;
+}    .absensi {
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 0 5px;
+    color:white;
+    background-color:var(--background3);
+} .undangan {
+    font-size: 1.5rem;
+    color:yellow;
+}
+
+
+.weddinggift .card {
+    color:black;
+    background: var(--background1);
+    border: unset;
+    box-shadow: 0 0 10px var(--background2);
+} .hilang {
+    opacity: 0;
+    transform:translate(0, -50px);
+    transition: all 1000ms ease 0s;
+} .hilang.muncul {
+    opacity: 1;
+    transform:translate(0, 0);
+}
+
+
+
+.weddinggift a.btn,
+.waktu .card a.btn,
+.ucapan button {
+    box-shadow: 0px 0px 10px #333;
+    background-color: #fff;
+    color:black;
+    border: unset;
+    transition: all 500ms ease 0s;
+} .weddinggift a.btn:hover,
+.waktu .card a.btn:hover,
+.ucapan button:hover {
+    background-color: #ddd;   
+} .himbauan .card {
+    background: var(--background1);
+    box-shadow: 0 0 5px #333;
+} footer .relative {
+    top:-40px;
+} .invite {
+    transition: all 500ms ease 0s;
+    height: 100vh;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    z-index: 999999999999999999999999999999999999999999999;
+    background: var(--background1);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+} .people {
+    width: 250px; 
+    border-radius: 300px;
+    border: 5px double var(--background5);
+} .invite button {
+    border: unset;
+    background:#fff;
+    color:black;
+    transition: all 200ms ease 0s;
+} .invite button:hover {
+    color:white;
+    background:var(--background3);
+} .buka {
+    transform: translate(0, -100%);
+}
+.invite p,
+.invite h2 {
+    color:#333;
+    text-shadow: 0 0 5px #fff;
+} .lovestory .card {
+    box-shadow: 2px 2px 5px var(--background3); 
+    
+}
+
+.himbauan  {
+    background-color: var(--background2);
+} .himbauan .relative {
+    top: -40px;
+} .himbauan-img {
+    width: 80px;
+} .boxs p {
+    font-size: 0.7rem;
+} .protocol {
+    border: 3px solid var(--background5);
+    padding: 5px;
+    border-radius: 50%;
+    background-color: var(--background3);
+    color:white;
+}
+
+.weddinggift a.btn {
+    background: var(--background2);
+    color:#333;
+}
+
+
+.waktu p {
+    font-size: 1.2rem;
+} .waktu .card a.btn:hover {
+    background-color: #ddd;
+} .galeri {
+    background-color: var(--background2);
+} .mygaleri {
+    padding: 50px;
+} .nav {
+    display: none;
+    box-shadow: 0 0 5px var(--background3);
+    position: fixed;
+    bottom: 20px;
+    border-radius: 150px;
+    left: 0;
+    right: 0;
+    z-index: 999999999999999999999999999999999;
+    background-color: var(--background1);
+    width: 95%;
+    padding: 10px 0;
+    margin: auto;
+} .nav a {
+    color:var(--background3)
+}
+
+.ucapan button {
+    background-color: var(--background1);
+    box-shadow: unset;
+    border: 2px solid var(--background3);
+} .ucapan button:hover {
+    background-color: #fff;
+    color:black;
+    border: 2px solid #333;
+} 
+
+.comments {
+    padding: 10px;
+    overflow: auto;
+    background-color:var(--background1);
+    overflow: auto;
+    
+    height: 250px;
+} .comment h5 {
+    color:#777;
+} .ucapan .card {
+    box-shadow: 0px 0px 10px var(--background3);
+} .comment {
+    margin-left: 10px;
+} .bank-img {
+    width: 90px;
+}
+
+
+@media screen and (max-width:720px) {
+    .bunga {
+        width: 150px;
+    } .bunga1 {
+        left: -1pc;
+        top: -1pc;
+    } .bunga2 {
+        bottom: -1pc;
+        left: -1pc;
+    }
+}
+
+@media screen and (max-width:684px) {
+    .ucapan img {
+        width: 100%;
+    } .time {
+        font-size: 0.9rem;
+    } .mymenu {
+        display: none;
+    } .people {
+        width: 200px;
+    } 
+}
+
+@media screen and (max-width: 520px) {
+    .bunga1 {
+        left: -3pc;
+        top: -3pc;
+    } .bunga2 {
+        bottom: -3pc;
+        left: -3pc;
+    }
+}
